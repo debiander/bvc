@@ -1,19 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BVC | Biblioteca Popular Bernardino Rivadavia</title>
+    <title>BVC | Biblioteca Vibel Cazalas | ISFDyT 33</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600&family=Playfair+Display:ital,wght@0,400;1,700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;600&family=Playfair+Display:ital,wght@0,400;1,700&display=swap"
+        rel="stylesheet">
     <style>
         :root {
-            --bg: #0f172a;
-            --accent: #f59e0b;
-            --text: #f8fafc;
-            --muted: #94a3b8;
+            --bg: #FAFFFD;
+            --accent: #3680BE;
+            --text: #352F38;
+            --muted: #6b7280;
+            --green: #209758;
         }
+
         body {
             margin: 0;
             background-color: var(--bg);
@@ -26,29 +31,33 @@
             overflow: hidden;
             text-align: center;
         }
+
         .container {
             max-width: 600px;
             padding: 2rem;
             z-index: 10;
         }
+
         h1 {
             font-family: 'Playfair Display', serif;
             font-size: 3.5rem;
             margin-bottom: 1rem;
-            background: linear-gradient(to right, #fff, var(--accent));
+            background: linear-gradient(to right, var(--text), var(--accent));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+
         p {
             font-size: 1.2rem;
             color: var(--muted);
             line-height: 1.6;
             font-weight: 300;
         }
+
         .badge {
             display: inline-block;
             padding: 0.5rem 1rem;
-            background: rgba(245, 158, 11, 0.1);
+            background: rgba(54, 128, 190, 0.1);
             border: 1px solid var(--accent);
             color: var(--accent);
             border-radius: 99px;
@@ -57,6 +66,7 @@
             margin-bottom: 2rem;
             text-transform: uppercase;
         }
+
         .footer {
             position: absolute;
             bottom: 2rem;
@@ -64,29 +74,42 @@
             color: var(--muted);
             letter-spacing: 1px;
         }
+
         .blob {
             position: absolute;
             width: 500px;
             height: 500px;
-            background: radial-gradient(circle, rgba(245, 158, 11, 0.1) 0%, rgba(15, 23, 42, 0) 70%);
+            background: radial-gradient(circle, rgba(54, 128, 190, 0.15) 0%, rgba(250, 255, 253, 0) 70%);
             border-radius: 50%;
             filter: blur(50px);
             z-index: 0;
             animation: float 20s infinite alternate;
         }
+
         @keyframes float {
-            0% { transform: translate(-10%, -10%); }
-            100% { transform: translate(10%, 10%); }
+            0% {
+                transform: translate(-10%, -10%);
+            }
+
+            100% {
+                transform: translate(10%, 10%);
+            }
         }
     </style>
 </head>
+
 <body>
     <div class="blob"></div>
     <div class="container">
+        <img src="assets/monograma_bvc_fb.png" alt="Glifo BVC" style="width: 60px; margin-bottom: 1.5rem;">
+        <br>
         <div class="badge">Próximamente</div>
-        <h1>Biblioteca Popular <br> Bernardino Rivadavia</h1>
-        <p>Estamos digitalizando nuestra historia para conectar con el futuro. Un nuevo portal de cultura y lectura para Tres Arroyos.</p>
+        <h1>Biblioteca Vibel Cazalas</h1>
+        <p>Instituto Superior de Formación Docente y Técnica Nº 33</p>
+        <p>Tres Arroyos</p>
+        <img src="assets/logo_bvc33_fb.png" alt="Logo BVC33" style="width: 280px; margin-top: 2.5rem;">
     </div>
     <div class="footer">TRES ARROYOS | ARGENTINA</div>
 </body>
+
 </html>
